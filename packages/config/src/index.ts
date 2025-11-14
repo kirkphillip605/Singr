@@ -42,7 +42,7 @@ export const config = envsafe({
   TWO_FACTOR_WINDOW: num({ default: 1 }), // TOTP window tolerance
 
   // Observability
-  SENTRY_DSN: str({ default: '' }),
+  SENTRY_DSN: str({ default: '', allowEmpty: true }),
   ENABLE_REQUEST_LOGGING: bool({ default: true }),
 
   // Stripe
@@ -66,7 +66,7 @@ export const config = envsafe({
   TWILIO_ACCOUNT_SID: str(),
   TWILIO_AUTH_TOKEN: str(),
   TWILIO_PHONE_NUMBER: str(), // E.164 format
-  TWILIO_VERIFY_SERVICE_SID: str({ default: '' }), // Optional: Use Twilio Verify API
+  TWILIO_VERIFY_SERVICE_SID: str({ default: '', allowEmpty: true }), // Optional: Use Twilio Verify API
 
   // Email/SMS Feature Flags
   ENABLE_EMAIL_SENDING: bool({ default: true }),
