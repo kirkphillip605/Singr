@@ -1,4 +1,10 @@
+import { config as dotenvConfig } from 'dotenv';
 import { envsafe, str, url, port, num, bool } from 'envsafe';
+import { resolve } from 'path';
+
+// Load .env file from workspace root or current directory
+dotenvConfig({ path: resolve(process.cwd(), '.env') });
+dotenvConfig({ path: resolve(process.cwd(), '../../.env') });
 
 export const config = envsafe({
   // Application
