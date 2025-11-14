@@ -1,5 +1,5 @@
-import Redis from 'ioredis';
 import { config } from '@singr/config';
+import Redis from 'ioredis';
 import { v4 as uuidv4 } from 'uuid';
 
 export interface SessionData {

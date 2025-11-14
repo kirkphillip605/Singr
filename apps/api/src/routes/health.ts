@@ -1,5 +1,5 @@
-import { FastifyInstance } from 'fastify';
 import { prisma } from '@singr/database';
+import { FastifyInstance } from 'fastify';
 
 export default async function healthRoutes(fastify: FastifyInstance) {
   // Basic health check

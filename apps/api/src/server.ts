@@ -1,4 +1,3 @@
-import Fastify from 'fastify';
 import cors from '@fastify/cors';
 import helmet from '@fastify/helmet';
 import rateLimit from '@fastify/rate-limit';
@@ -6,6 +5,8 @@ import swagger from '@fastify/swagger';
 import swaggerUi from '@fastify/swagger-ui';
 import { config, corsOrigins } from '@singr/config';
 import { logger } from '@singr/observability';
+import Fastify from 'fastify';
+
 import healthRoutes from './routes/health';
 
 export async function createServer() {

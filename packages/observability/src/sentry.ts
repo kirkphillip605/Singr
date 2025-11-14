@@ -1,5 +1,6 @@
 import * as Sentry from '@sentry/node';
 import { config } from '@singr/config';
+
 import { logger } from './logger';
 
 export function initSentry() {

@@ -1,6 +1,6 @@
+import { AppError } from '@singr/shared';
 import { FastifyInstance, FastifyError, FastifyReply, FastifyRequest } from 'fastify';
 import fp from 'fastify-plugin';
-import { AppError } from '@singr/shared';
 import { ZodError } from 'zod';
 
 async function errorHandlerPlugin(fastify: FastifyInstance) {

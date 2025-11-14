@@ -1,5 +1,6 @@
 import { config } from '@singr/config';
 import { logger, initSentry } from '@singr/observability';
+
 import { createServer } from './server';
 
 async function start() {

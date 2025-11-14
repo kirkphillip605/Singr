@@ -1,5 +1,5 @@
-import jwt from 'jsonwebtoken';
 import { config } from '@singr/config';
+import jwt from 'jsonwebtoken';
 
 export interface JWTPayload {
   userId: string;

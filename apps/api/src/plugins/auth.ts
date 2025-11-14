@@ -1,7 +1,7 @@
-import { FastifyInstance, FastifyRequest } from 'fastify';
-import fp from 'fastify-plugin';
 import { verifyToken } from '@singr/auth';
 import { AuthenticationError } from '@singr/shared';
+import { FastifyInstance, FastifyRequest } from 'fastify';
+import fp from 'fastify-plugin';
 
 declare module 'fastify' {
   interface FastifyRequest {
